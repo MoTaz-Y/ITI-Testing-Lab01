@@ -1,0 +1,19 @@
+1-  npm init
+    or 
+    npm init -y
+
+2-Add Jasmine to your package.json
+    npm install --save-dev jasmine
+    or
+    npm install -D jasmine
+
+3-Initialize Jasmine in your project by making configuration (json) file 
+    npx jasmine init
+this will create a spec folder, Make the spec files inside it with any name ends with spec.js /Spec.js
+ (or you can change the spec_dir and spec_files in spec/support/jasmine.json if you want)
+
+4-Set jasmine as your test script in your package.json
+"scripts": { "test": "jasmine" }
+
+5-Run your tests
+    npm test
